@@ -9,7 +9,7 @@
 <body>
     <div class="login-container">
         <h2>Login Successful!</h2>
-        {{-- <p>Welcome, {{ Auth::user()->name }}.</p> --}}
+        <p>Welcome, {{ Auth::user()->name }}.</p>
         <a href="{{ route('home') }}" class="login-btn">Go to Home</a>
     </div>
 </body>
