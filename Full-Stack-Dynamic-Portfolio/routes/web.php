@@ -58,3 +58,8 @@ Route::resource('infos', InfoController::class);
 Route::get('/login-success', function () {
     return view('auth.login-success');
 })->name('login.success');
+
+// Admin Dashboard
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->middleware('auth')->name('admin.dashboard');
