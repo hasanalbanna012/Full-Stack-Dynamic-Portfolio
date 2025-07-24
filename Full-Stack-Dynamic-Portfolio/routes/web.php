@@ -53,3 +53,8 @@ Route::resource('educations', EducationController::class);
 Route::resource('achievements', AchievementController::class);
 Route::resource('experiences', ExperienceController::class);
 Route::resource('infos', InfoController::class);
+
+// Login Success Page
+Route::get('/login-success', function () {
+    return view('auth.login-success');
+})->name('login.success');
