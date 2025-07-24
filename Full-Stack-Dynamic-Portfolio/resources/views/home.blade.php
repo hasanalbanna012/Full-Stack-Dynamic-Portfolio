@@ -10,6 +10,7 @@
         <p><b>Android App Developer</b></p>
         <p><i class="fas fa-envelope"></i> Email: shahhasanita@gmail.com</p>
         <p><i class="fas fa-phone"></i> Phone: 01735-721773</p>
+        <a href="{{ route('auth.login') }}" class="login-btn">Login</a>
     </div>
     <img src="assets\images\profile.jpg" alt="Profile Picture">
 </section>

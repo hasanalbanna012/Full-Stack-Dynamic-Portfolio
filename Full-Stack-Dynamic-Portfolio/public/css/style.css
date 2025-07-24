@@ -80,5 +80,20 @@ body {
     color: #007BFF;
     transform: scale(1.2);
   }
-  
-  
+
+  /* Add to your main CSS file */
+  .login-btn {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: linear-gradient(90deg, #2980b9, #6dd5fa);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background 0.2s;
+  }
+  .login-btn:hover {
+    background: linear-gradient(90deg, #2574a9, #48b1f3);
+  }
+
