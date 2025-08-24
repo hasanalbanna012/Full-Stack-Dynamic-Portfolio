@@ -51,7 +51,18 @@ class PersonalDetailController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'bio' => 'nullable|string',
+        ]);
+        $user = \App\Models\User::findOrFail($id);
+        $user->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'bio' => $request->bio,
+        ]);
+        return redirect()->back()->with('success', 'Profile updated successfully!');
     }
 
     /**
